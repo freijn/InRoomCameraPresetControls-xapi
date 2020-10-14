@@ -4,6 +4,8 @@ Webex device InRoom Camera Preset Controls
 This script can store 8 camera presets. Presets will be assigned to the active camera and stores Pan Tilt Zoom and focus values.
 additionally Focus, Brightness, White Balance can be manually set.
 
+https://help.webex.com/en-us/n5pqqcm/Device-Configurations-for-Room-and-Desk-Devices-and-Webex-Boards#task_i1d_g55_cz
+
 Install :
 Open the Webex device webpage and 
 - goto the 'UI extentions editor'  Upload the MultiPresetsroom.xml
