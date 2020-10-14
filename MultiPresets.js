@@ -1,4 +1,4 @@
-/*  Camera Preserts Version 1.1  Frank Reijn
+/*  Camera Preserts Version 1.2  Frank Reijn
 This SOFTWARE PRODUCT is provided "as is" and "with all faults." 
 There is no representations or warranties of any kind concerning the safety,
 suitability, lack of viruses, inaccuracies, typographical errors,or 
@@ -55,14 +55,14 @@ xapi.event.on('UserInterface Extensions Page Action', (event) => {
         setGuiValue('Autofocus', 'on');
         xapi.Command.UserInterface.Extensions.Widget.SetValue({
           WidgetId: 'brtext',
-          Value: '20',
+          Value: 'A',
         });
         setGuiValue('bright', 'on');
         setGuiValue('Whitebalance', 'on');
         setGuiValue('standby', 'on');
         xapi.Command.UserInterface.Extensions.Widget.SetValue({
           WidgetId: 'wbtext',
-          Value: '1',
+          Value: 'A',
         });
         //disable SpeakerTrack to avoid a runaway!
         xapi.status.get('Cameras SpeakerTrack Status').then((pstatus) => {
@@ -164,10 +164,22 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
       if (event.Value == "on"){
         xapi.config.set('Cameras Camera 1 Brightness Mode','Auto');
         xapi.config.set('Cameras Camera 2 Brightness Mode','Auto');
+        xapi.Command.UserInterface.Extensions.Widget.SetValue({
+        WidgetId: 'brtext',
+        Value: 'A',
+        });
       } else {
         xapi.config.set('Cameras Camera 1 Brightness Mode','Manual');
         xapi.config.set('Cameras Camera 2 Brightness Mode','Manual');
-      }
+        xapi.Command.UserInterface.Extensions.Widget.SetValue({
+        WidgetId: 'brtext',
+        Value: '20',
+        });
+        xapi.Command.UserInterface.Extensions.Widget.SetValue({
+        WidgetId: 'brightset',
+        Value: '255',
+        });
+      }  
     }
   } 
 
@@ -175,11 +187,12 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
   //set Brightness slider
   if(event.WidgetId == 'brightset'){
     if(event.Type == 'pressed'){
-      Brightval = parseInt(Math.floor((event.Value * 0.1)));
-      camera1active && xapi.config.set('Cameras Camera 1 Brightness DefaultLevel',Brightval);
-      camera1active && xapi.config.set('Cameras Camera 2 Brightness DefaultLevel',Brightval);
+    //none
     }
     else if(event.Type == 'released'){
+      Brightval = parseInt(Math.floor((event.Value * 0.1)));
+      camera1active && xapi.config.set('Cameras Camera 1 Brightness DefaultLevel',Brightval);
+      camera1active && xapi.config.set('Cameras Camera 2 Brightness DefaultLevel',Brightval); 
       // update the value to the Gui
       xapi.Command.UserInterface.Extensions.Widget.SetValue({
         WidgetId: 'brtext',
@@ -195,21 +208,34 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
       if (event.Value == "on"){
         xapi.config.set('Cameras Camera 1 Whitebalance Mode','Auto');
         xapi.config.set('Cameras Camera 2 Whitebalance Mode','Auto');
+        xapi.Command.UserInterface.Extensions.Widget.SetValue({
+        WidgetId: 'wbtext',
+        Value: 'A',
+      });
       } else {
         xapi.config.set('Cameras Camera 1 Whitebalance Mode','Manual');
         xapi.config.set('Cameras Camera 2 Whitebalance Mode','Manual');
-      }
+        xapi.Command.UserInterface.Extensions.Widget.SetValue({
+        WidgetId: 'wbset',
+        Value: '255',
+        });
+        xapi.Command.UserInterface.Extensions.Widget.SetValue({
+        WidgetId: 'wbtext',
+        Value: '16',
+        });
+      }  
     }
   }
 
   //set WhiteBalance slider
   if(event.WidgetId == 'wbset'){
     if(event.Type == 'pressed'){
+      //none
+    }
+    else if(event.Type == 'released'){
       WBval = parseInt(Math.floor((event.Value * 0.064)));
       camera1active && xapi.config.set('Cameras Camera 1 Whitebalance Level',WBval);
       camera2active && xapi.config.set('Cameras Camera 2 Whitebalance Level',WBval);
-    }
-    else if(event.Type == 'released'){
       // update the value to the Gui
       xapi.Command.UserInterface.Extensions.Widget.SetValue({
         WidgetId: 'wbtext',
