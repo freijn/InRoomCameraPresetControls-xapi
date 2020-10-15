@@ -113,7 +113,7 @@
         </Widget>
       </Row>
       <Row>
-        <Name>FocusStepSpeed</Name>
+        <Name>Focus Step Speed</Name>
         <Widget>
           <WidgetId>fspeed</WidgetId>
           <Type>GroupButton</Type>
@@ -244,7 +244,7 @@
         <Name>Egg Cam Position</Name>
         <Widget>
           <WidgetId>eggsuggestion</WidgetId>
-          <Name>Cam Sugest</Name>
+          <Name>Cam Suggest</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
         </Widget>
@@ -258,7 +258,7 @@
         <Name>Destuctive &gt;&gt;</Name>
         <Widget>
           <WidgetId>ClearAll</WidgetId>
-          <Name>!! Clear All Preset !!</Name>
+          <Name>!! Clear All Presets !!</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
         </Widget>
@@ -273,3 +273,4 @@
     </Page>
   </Panel>
 </Extensions>
+
