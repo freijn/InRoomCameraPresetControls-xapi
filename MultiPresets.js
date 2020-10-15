@@ -12,7 +12,7 @@ you may suffer in connection with using, modifying, or distributing this SOFTWAR
 - How to :  Speakertrack wil be de-activate when GUI is activated and does STAY de-activated!
             Longpress a number does store the current active camera position , focus and zoom.
             Focus WhiteBalance Brightness..  Easy I hope
-            EasterEgg, press the Smily button.  Position the camera for a wide view. 
+            EasterEgg, press the Smiley button.  Position the camera for a wide view. 
             Longpress the Smily to store the positions.  Find a suggestion position in the settings tab.
             in the Settings there is a button for a suggestion camera position. 
 */
@@ -179,7 +179,7 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
         WidgetId: 'brightset',
         Value: '255',
         });
-      }  
+      }
     }
   } 
 
@@ -396,7 +396,7 @@ xapi.event.on('UserInterface Extensions Widget Action', (event) => {
           xapi.command("Camera PositionSet", {CameraId: CAMERAID_CAMERA_RIGHT,Tilt: '130',Pan: '-3700',Zoom: '8500'});
         }
         else {
-          alert('', 'Please Activate EasterEgg first!!', 3);
+          alert('', 'Please Activate EasterEgg mode first!!', 3);
         }
       }
     }
