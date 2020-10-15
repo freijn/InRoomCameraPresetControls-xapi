@@ -25,7 +25,7 @@ On entering this page the Speakertrack function will be de-activate and does STA
 <p>A Longpress a one of the eight numbers does store the current active camera position , focus and zoom.</p>
 <p>Focus, WhiteBalance and Brightness can be adjusted via the tab pages. These will NOT be stored.</p>
 <p>A shortpress on the one of the eight numbers will recall the stored position. If the preset is of the 'other'</p>
-<p>camera you need to activate that camera to vieuw the selected position. In this sequence you can avoid moving camera's</p>
+<p>camera you need to activate that camera to view the selected position. In this sequence you can avoid moving camera's</p>
 
 <h2>Settings tab:</h2> 
 
@@ -35,11 +35,11 @@ On entering this page the Speakertrack function will be de-activate and does STA
 
 <h2>EasterEgg:</h2> 
 
-<p>Press the Smily button. On the Right bottom you see the text EggM which indicates EasterEggMode.</p>
+<p>Press the Smiley button. On the Right bottom you see the text EggM which indicates EasterEggMode.</p>
 <p>Position the camera's for a wide view. If you have no clue how to start, goto the settings tab and press the</p>  
 <p>Cam Suggest button.</p>
-<p>Longpress the Smily to store the positions.</p>
-<p>You can leave the EasterEggMode by pressing the Smily button again. (mind the text on the right bottom corner)</p>
+<p>Longpress the Smiley to store the positions.</p>
+<p>You can leave the EasterEggMode by pressing the Smiley button again. (mind the text on the right bottom corner)</p>
 
 
 
