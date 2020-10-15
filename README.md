@@ -42,4 +42,4 @@ On entering this page the Speakertrack function will be de-activate and does STA
 <p>You can leave the EasterEggMode by pressing the Smiley button again. (mind the text on the right bottom corner)</p>
 
 
-
+<p><img style="margin: 0 0 5px 20px; float: right;" src="https://github.com/freijn/InRoomCameraPresetControls-xapi/blob/main/camera_gui.JPG" alt="CameraGUI" width="300" height="300" /></p>
