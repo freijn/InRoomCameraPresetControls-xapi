@@ -1,9 +1,9 @@
 # InRoomCameraPresetControls xapi
 <h2>Webex device InRoom Camera Preset Controls</h2>
 
-This script can store up to 8 camera presets. 
-Presets will be assigned to the active camera and stores Pan Tilt Zoom and focus values.
-Additionally Focus, Brightness, White Balance can be manually set.
+<p>This script can store up to 8 camera presets.</p>
+<p>Presets will be assigned to the active camera and stores Pan Tilt Zoom and focus values.</p>
+<p>Additionally Focus, Brightness, White Balance can be manually set.</p>
 
 <p>My attempt to create a usable camera presets page. Created with a smile.</p>
 
