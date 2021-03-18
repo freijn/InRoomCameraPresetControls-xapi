@@ -28,7 +28,7 @@ https://help.webex.com/en-us/n5pqqcm/Device-Configurations-for-Room-and-Desk-Dev
 On entering this page the Speakertrack function will be de-activate and does STAY de-activated!
 
 <p>Select the camera and change it to the desired position and zoom level.</p>
-<p>A Longpress a one of the eight numbers does store the current active camera position , focus and zoom.</p>
+<p>A Longpress on one of the eight numbers does store the current active camera position , focus and zoom.</p>
 <p>Focus, WhiteBalance and Brightness can be adjusted via the tab pages. These will NOT be stored.</p>
 <p>A shortpress on the one of the eight numbers will recall the stored position. If the preset is of the 'other'</p>
 <p>camera you need to activate that camera to view the selected position. In this sequence you can avoid moving camera's</p>
