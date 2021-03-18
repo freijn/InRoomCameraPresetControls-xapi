@@ -8,10 +8,10 @@
 
 <p>My attempt to create a usable camera presets page. Created with a smile.</p>
 
-History:
-2021-030-18
-MultiPresets3.js and roomcontrolconfig3.xml is the 3 camera version.
-Also Proximity and standby control are added.
+<p>History:</p>
+<p>2021-030-18</p>
+<p>MultiPresets3.js and roomcontrolconfig3.xml is the 3 camera version.</p>
+<p>Also Proximity and standby control are added.</p>
 
 <h2>How to Install :</h2>
 <p>Open the Webex device webpage</p> 
