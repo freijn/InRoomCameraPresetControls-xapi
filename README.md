@@ -4,8 +4,14 @@
 <p>This script can store up to 8 camera presets.</p>
 <p>Presets will be assigned to the active camera and stores Pan Tilt Zoom and focus values.</p>
 <p>Additionally Focus, Brightness, White Balance can be manually set.</p>
+<p>SpeakerTrack will always be Deactivated and Proximity and AutoStandBy can manually be Deactivated.</p>
 
 <p>My attempt to create a usable camera presets page. Created with a smile.</p>
+
+History:
+2021-030-18
+MultiPresets3.js and roomcontrolconfig3.xml is the 3 camera version.
+Also Proximity and standby control are added.
 
 <h2>How to Install :</h2>
 <p>Open the Webex device webpage</p> 
